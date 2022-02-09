@@ -2,8 +2,8 @@
 class ProductsController < ApplicationController
   before_action :authenticate_user!
   def index
-    products = Product.order('created_at DESC')
-    render json: { status: 'Success', message: 'products loaded', data: products }, status: :ok
+    @products = Product.order('created_at DESC')
+    # render json: { status: 'Success', message: 'products loaded', data: products }, status: :ok
   end
 
   def show

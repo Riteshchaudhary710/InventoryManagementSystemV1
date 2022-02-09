@@ -1,0 +1,31 @@
+<div class="heading">
+  <h1>Inventory Management System</h1>
+</div>
+<table>
+<tr>
+  <th>Id </th>
+  <th>Current products </th>
+  <th>upc </th>
+  <th>part number </th>
+  <th>label </th>
+</tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.id %></td>
+    <td><%= product.name %></td>
+    <td><%= product.upc %></td>
+    <td><%= product.part_number %></td>
+    <td><%= product.label %></td>     
+  <tr>
+<% end %>
+
+  
+ 
+
+ 
+
+
+
+
+ </table>
