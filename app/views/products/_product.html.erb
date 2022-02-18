@@ -1,0 +1,20 @@
+
+<%= form_with model: @product do |form| %>
+  <label for="product_name">Product name</label>
+  <br>
+  <%= form.text_field :name %>
+  <br>
+  <label for="upc">Product UPC</label>
+  <br>
+  <%= form.text_field :upc %>
+  <br>
+  <label for="part_number">Part number</label>
+  <br>
+  <%= form.text_field :part_number %>
+  <br>
+  <label for="label">Label</label>
+  <br>
+  <%= form.text_field :label %>
+  <br>
+  <%= form.submit %>
+<% end %>
