@@ -1,6 +1,8 @@
 <div class="heading">
   <h1>Inventory Management System</h1>
 </div>
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+<%= render partial: "product" %>
 <table>
 <tr>
   <th>Id </th>
@@ -19,13 +21,9 @@
     <td><%= product.label %></td>     
   <tr>
 <% end %>
-
-  
- 
-
- 
-
-
-
-
- </table>
+</table>
+<script>
+$(document).ready(function(){
+  $(".heading").hide()
+})
+</script>
