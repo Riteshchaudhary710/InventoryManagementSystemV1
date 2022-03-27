@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'users/index'
   devise_for :users, :suppliers, :admins
   # routes for products
-  resources :products
+  resources :products, :category
   root to: 'products#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
